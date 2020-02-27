@@ -55,7 +55,7 @@ In this case, StorSimple prioritizes for crash-consistency and uses *customPol* 
 
 Before you fail over a device, review the following information:
 
-* Before a device failover starts, all the volumes within the volume containers must be offline. In an unplanned failover, StotSimple volumes will automatically go offline. But if you are performing a planned failover (to test DR), you must take all the volumes offline.
+* Before a device failover starts, all the volumes within the volume containers must be offline. In an unplanned failover, StorSimple volumes will automatically go offline. But if you are performing a planned failover (to test DR), you must take all the volumes offline.
 * Only the volume containers that have an associated cloud snapshot are listed for DR. There must be at least one volume container with an associated cloud snapshot to recover data.
 * If there are cloud snapshots that span across multiple volume containers, StorSimple fails over these volume containers as a set. In a rare instance, if there are local snapshots that span across multiple volume containers but associated cloud snapshots do not, StorSimple does fail over the local snapshots and the local data is lost after DR.
 * The available target devices for DR are devices that have sufficient space to accommodate the selected volume containers. Any devices that do not have sufficient space, are not listed as target devices.
